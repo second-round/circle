@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#B1F4CD"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".BallActivity">
+
+    <com.example.ballviewdemo.BallView
+        android:id="@+id/ball"
+        android:layout_width="wrap_content"
+        android:layout_weight="6"
+        android:layout_height="400dp" />
+
+    <com.example.ballviewdemo.LieanView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        app:layout_constraintTop_toBottomOf="@+id/ball"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <com.example.ballviewdemo.LieanView
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:text="button1"
+                />
+            <Button
+                android:layout_width="150dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="50dp"
+                android:text="button1"
+                />
+        </com.example.ballviewdemo.LieanView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="button1"
+            />
+    </com.example.ballviewdemo.LieanView>
+</LinearLayout>
